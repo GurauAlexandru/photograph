@@ -1,0 +1,17 @@
+@import '../../styles/styles';
+
+.navigation {
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: $font-primary;
+    color: $color-dark;
+  }
+}

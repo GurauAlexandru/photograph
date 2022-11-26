@@ -1,0 +1,21 @@
+// Font type
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+$font-primary: 'Yatra One', cursive;
+
+// Breakpoints
+$bp-4k: 156em; // 2500px
+$bp-largest: 75em; // 1200/16 = 75em
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+// Colors
+$color-primary: #e1b692;
+$color-dark: #333;
+
+// Temp
+h1 {
+  font-family: $font-primary;
+  font-size: 3rem;
+}
