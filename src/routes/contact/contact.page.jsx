@@ -12,7 +12,7 @@ const ContactPage = () => {
         <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
           <img alt='Chat on WhatsApp' src={whatsappLogo} />
         </a>
-        <a href='http://m.me/+40799980957'>
+        <a href='http://m.me/alexandru.gurau.96'>
           <img alt='Chat on Messenger' src={messengerLogo} className='icon' />
         </a>
       </main>
