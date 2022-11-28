@@ -10,8 +10,12 @@ const Navigation = () => (
       <Link to='/albums' className='navigation__link'>
         Albume
       </Link>
-      <li>Despre</li>
-      <li>Contact</li>
+      <Link to='/about' className='navigation__link'>
+        Despre
+      </Link>
+      <Link to='/contact' className='navigation__link'>
+        Contact me
+      </Link>
     </nav>
     <Outlet />
   </>

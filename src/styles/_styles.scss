@@ -1,6 +1,7 @@
 // Font type
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
-$font-primary: 'Yatra One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+$font-primary: 'Italiana', serif;
 
 // Breakpoints
 $bp-4k: 156em; // 2500px
@@ -26,4 +27,13 @@ $color-dark: #333;
   font-size: 2.4rem;
   letter-spacing: 1.4px;
   font-family: $font-primary;
+}
+
+// Logo
+.logo {
+  width: 30rem;
+  margin-top: 5rem;
+}
+.icon {
+  width: 5rem;
 }

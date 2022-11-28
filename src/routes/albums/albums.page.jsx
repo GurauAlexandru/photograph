@@ -1,7 +1,7 @@
 import './albums.styles.scss';
 import Header from '../../components/header/header.component';
-import img from '../../assets/images/wedding--3.jpg';
+import img from '../../assets/images/wallpaper-albums.jpg';
 
-const Albums = () => <Header title='Albums page' img={img} />;
+const AlbumsPage = () => <Header title='Albums page' img={img} />;
 
-export default Albums;
+export default AlbumsPage;

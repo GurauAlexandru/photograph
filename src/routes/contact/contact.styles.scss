@@ -1,0 +1,20 @@
+@import '../../styles/styles';
+
+.contact-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    height: auto;
+    width: 100%;
+    // background-color: antiquewhite;
+
+    padding: 5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

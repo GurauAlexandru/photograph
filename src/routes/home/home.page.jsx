@@ -1,7 +1,7 @@
 import './home.styles.scss';
 import Header from '../../components/header/header.component';
-import img from '../../assets/images/wedding--1.jpg';
+import img from '../../assets/images/wallpaper-home.jpg';
 
-const Home = () => <Header title='Home page' img={img} />;
+const HomePage = () => <Header title='Acasă' img={img} />;
 
-export default Home;
+export default HomePage;
