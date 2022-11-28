@@ -9,12 +9,58 @@
   &__main {
     height: auto;
     width: 100%;
-    // background-color: antiquewhite;
 
     padding: 5rem 2rem;
 
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+
+  &__program {
+    height: auto;
+    width: 50%;
+    padding: 0 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      padding: 0;
+      align-items: center;
+    }
+  }
+
+  &__messenger {
+    height: auto;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    width: 30rem;
+    text-align: right;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      text-align: justify;
+    }
   }
 }
