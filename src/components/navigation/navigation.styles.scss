@@ -18,8 +18,37 @@
     font-size: 2rem;
     font-family: $font-primary;
     color: $color-dark;
+
+    &--mobile {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
-// .menu--button {
-// }
+.mobile-menu {
+  width: 100%;
+  min-height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-view__container {
+  height: 90%;
+  width: auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+// must be created new components

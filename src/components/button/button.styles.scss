@@ -1,0 +1,16 @@
+@import '../../styles/styles';
+
+.button--menu {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--right {
+  align-self: end;
+}
