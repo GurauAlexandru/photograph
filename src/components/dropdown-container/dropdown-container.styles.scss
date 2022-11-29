@@ -1,0 +1,14 @@
+@import '../../styles/styles';
+
+.dropdown-container {
+  width: 100%;
+  min-height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+}

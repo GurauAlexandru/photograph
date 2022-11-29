@@ -1,0 +1,13 @@
+@import '../../styles/styles';
+
+.dropdown-menu {
+  height: 90%;
+  width: auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
