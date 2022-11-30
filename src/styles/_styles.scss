@@ -1,7 +1,9 @@
 // Font type
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap');
 
-$font-primary: 'Italiana', serif;
+// $font-primary: 'Italiana', serif;
+$font-primary: 'Playfair Display', serif;
 
 // Breakpoints
 $bp-4k: 156em; // 2500px
@@ -18,12 +20,19 @@ $color-dark: #333;
 // Temp
 .h {
   font-family: $font-primary;
+  font-weight: 100;
+}
+.h-xLarge {
+  font-size: 5rem;
 }
 .h--big {
   font-size: 4.5rem;
 }
 .h-large {
   font-size: 3.5rem;
+}
+.h--small {
+  font-size: 2rem;
 }
 
 .p {

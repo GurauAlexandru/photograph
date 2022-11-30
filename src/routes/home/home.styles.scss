@@ -1,1 +1,66 @@
 @import '../../styles/styles';
+
+.welcome {
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 50rem;
+      width: 100%;
+
+      margin: 1rem 0;
+    }
+
+    &__text {
+      justify-content: flex-start;
+
+      @media only screen and (max-width: $bp-small) {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__picture {
+    height: 40rem;
+    width: 35rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// this must be changed
+.noname {
+  height: 10rem;
+  width: 100%;
+  margin: 5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
