@@ -36,9 +36,10 @@
     }
   }
 
+  // This will be deleted
   &__picture {
     height: 40rem;
-    width: 35rem;
+    width: 80%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 10rem;
     border-bottom-left-radius: 1rem;
@@ -52,15 +53,4 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-
-// this must be changed
-.noname {
-  height: 10rem;
-  width: 100%;
-  margin: 5rem 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

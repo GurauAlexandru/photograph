@@ -3,10 +3,12 @@
 .navigation {
   height: 5rem;
   width: 100%;
+  padding: 0 10rem;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  gap: 5rem;
 
   @media only screen and (max-width: $bp-small) {
     justify-content: end;
@@ -22,6 +24,8 @@
     &--mobile {
       font-size: 3rem;
       margin-bottom: 1rem;
+      width: 100%;
+      text-align: center;
     }
   }
 }

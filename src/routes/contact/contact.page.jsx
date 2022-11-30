@@ -1,34 +1,54 @@
 import './contact.styles.scss';
-import Header from '../../components/header/header.component';
-import img from '../../assets/images/wallpaper-contact.jpg';
+import Navigation from '../../components/navigation/navigation.component';
+import Container from '../../components/container/container.component';
+import Box from '../../components/box/box.component';
+import Images from '../../components/images/images.component';
+import img from '../../assets/images/wallpaper-contact-c.jpg';
+import logo from '../../assets/icons/logo--black.png';
+
 import whatsappLogo from '../../assets/icons/WhatsAppButtonGreenLarge.svg';
 import emailLogo from '../../assets/icons/email.svg';
 
 const ContactPage = () => {
   return (
-    <div className='contact-page'>
-      <Header title='Contactează-mă' img={img} />
-      <main className='contact-page__main'>
-        <section className='contact-page__program'>
-          <h3 className='h h-large'>Salut, </h3>
-          <p className='p contact-page__text'>
-            Mă poți <span>contacta</span> de <span>luni</span> până{' '}
-            <span>vineri</span> între orele <span>08:00</span> -{' '}
-            <span>16:00</span> cu un simplu <span>click</span> pe oricare dintre
-            pictogramele afișate.{' '}
-          </p>
-        </section>
-        <section className='contact-page__messenger'>
-          <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
-            <img alt='Chat on WhatsApp' src={whatsappLogo} />
-          </a>
-          <a href='mailto:fotograf@email.com' className='social-link'>
-            <img alt='Send me an email' src={emailLogo} className='icon' /> Send
-            email
-          </a>
-        </section>
-      </main>
-    </div>
+    <>
+      <Navigation />
+      <Container>
+        <Box to='right'>
+          {
+            <>
+              <img src={logo} alt='logo' className='logo' />
+              <p className='p'>Lorem ipsum dolor sit amet.</p>
+            </>
+          }
+        </Box>
+        <Box to='left'>
+          {<Images src={img} to='left' alt='contact wallpaper' />}
+        </Box>
+      </Container>
+      <div className='contact-page'>
+        <main className='contact-page__main'>
+          <section className='contact-page__program'>
+            <h3 className='h h-large'>Salut, </h3>
+            <p className='p contact-page__text'>
+              Mă poți <span>contacta</span> de <span>luni</span> până{' '}
+              <span>vineri</span> între orele <span>08:00</span> -{' '}
+              <span>16:00</span> cu un simplu <span>click</span> pe oricare
+              dintre pictogramele afișate.{' '}
+            </p>
+          </section>
+          <section className='contact-page__messenger'>
+            <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
+              <img alt='Chat on WhatsApp' src={whatsappLogo} />
+            </a>
+            <a href='mailto:fotograf@email.com' className='social-link'>
+              <img alt='Send me an email' src={emailLogo} className='icon' />{' '}
+              Send email
+            </a>
+          </section>
+        </main>
+      </div>
+    </>
   );
 };
 
