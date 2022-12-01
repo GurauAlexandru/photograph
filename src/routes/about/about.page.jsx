@@ -19,7 +19,9 @@ const AboutPage = () => {
             </>
           }
         </Box>
-        <Box to='left'>{<Images src={img} to='left' />}</Box>
+        <Box to='left'>
+          {<Images src={img} to='left' alt='about wallpaper' />}
+        </Box>
       </Container>
     </>
   );
