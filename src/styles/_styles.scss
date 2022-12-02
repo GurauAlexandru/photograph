@@ -24,8 +24,10 @@ $color-dark: #333;
 }
 
 .h--mobile {
-  align-self: flex-start;
-  padding-left: 1.5rem;
+  @media only screen and (max-width: $bp-small) {
+    align-self: flex-start;
+    padding-left: 1.5rem;
+  }
 }
 .h--xLarge {
   font-size: 5rem;
