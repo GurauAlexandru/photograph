@@ -1,10 +1,8 @@
 import './contact.styles.scss';
 import Navigation from '../../components/navigation/navigation.component';
-import Container from '../../components/container/container.component';
-import Box from '../../components/box/box.component';
-import Images from '../../components/images/images.component';
+import Header from '../../components/header/header.component';
+
 import img from '../../assets/images/wallpaper-contact-c.jpg';
-import logo from '../../assets/icons/logo--black.png';
 
 import whatsappLogo from '../../assets/icons/WhatsAppButtonGreenLarge.svg';
 import emailLogo from '../../assets/icons/email.svg';
@@ -13,23 +11,16 @@ const ContactPage = () => {
   return (
     <>
       <Navigation />
-      <Container>
-        <Box to='right'>
-          {
-            <>
-              <img src={logo} alt='logo' className='logo' />
-              <p className='p'>Lorem ipsum dolor sit amet.</p>
-            </>
-          }
-        </Box>
-        <Box to='left'>
-          {<Images src={img} to='left' alt='contact wallpaper' />}
-        </Box>
-      </Container>
+      <Header
+        img={img}
+        alt='img text'
+        title='Contact page'
+        description='welcome to contact page'
+      />
       <div className='contact-page'>
         <main className='contact-page__main'>
           <section className='contact-page__program'>
-            <h3 className='h h-large'>Salut, </h3>
+            <h3 className='h h--large'>Salut, </h3>
             <p className='p contact-page__text'>
               Mă poți <span>contacta</span> de <span>luni</span> până{' '}
               <span>vineri</span> între orele <span>08:00</span> -{' '}

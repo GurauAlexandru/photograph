@@ -7,10 +7,6 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 
-  // &__big {
-  //   width: 70rem;
-  // }
-
   &__small {
     width: 60%;
   }
@@ -28,8 +24,4 @@
   @media only screen and (max-width: $bp-medium) {
     width: 90%;
   }
-
-  // @media only screen and (max-width: $bp-small) {
-  //   width: 90%;
-  // }
 }

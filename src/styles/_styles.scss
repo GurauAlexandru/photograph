@@ -22,13 +22,17 @@ $color-dark: #333;
   font-family: $font-primary;
   font-weight: 100;
 }
-.h-xLarge {
+.h--xLarge {
   font-size: 5rem;
+
+  @media only screen and (min-width: $bp-4k) {
+    font-size: 10rem;
+  }
 }
 .h--big {
   font-size: 4.5rem;
 }
-.h-large {
+.h--large {
   font-size: 3.5rem;
 }
 .h--small {
