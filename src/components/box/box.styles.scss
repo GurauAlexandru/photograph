@@ -1,0 +1,35 @@
+@import '../../styles/styles';
+
+.box {
+  width: 32rem;
+  height: 25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 30rem;
+    height: 25rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    height: 15rem;
+    gap: 2rem;
+  }
+  //   @media only screen and (max-width: $bp-small) {
+  //     width: 100%;
+  //     height: 20rem;
+  //   }
+
+  &__content {
+    height: 100%;
+    width: 80%;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

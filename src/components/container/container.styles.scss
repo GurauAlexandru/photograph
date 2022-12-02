@@ -1,0 +1,12 @@
+@import '../../styles/styles';
+
+.container {
+  height: auto;
+  width: 90%;
+  margin: 0 auto 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -29,6 +29,13 @@ $color-dark: #333;
     padding-left: 1.5rem;
   }
 }
+
+.h--cart {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #e1b692;
+}
+
 .h--xLarge {
   font-size: 5rem;
 
@@ -45,6 +52,10 @@ $color-dark: #333;
 .h--small {
   font-size: 2rem;
   margin-bottom: 3rem;
+
+  &__cart {
+    margin-bottom: 0;
+  }
 }
 
 .paragraph {
@@ -61,6 +72,11 @@ $color-dark: #333;
   @media only screen and (max-width: $bp-small) {
     width: 90%;
   }
+}
+.p--cart {
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  width: 100%;
 }
 
 // remove
