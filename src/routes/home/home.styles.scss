@@ -35,22 +35,51 @@
       }
     }
   }
+}
 
-  // This will be deleted
-  &__picture {
-    height: 40rem;
-    width: 80%;
+.welcome {
+  height: 50rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+    margin: 3rem 0;
+  }
+
+  &__box {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 35rem;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    height: 80%;
+
     border-top-left-radius: 1rem;
     border-top-right-radius: 10rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @media only screen and (max-width: $bp-small) {
+      height: auto;
+      width: 95%;
+    }
   }
 }

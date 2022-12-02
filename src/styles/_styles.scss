@@ -20,7 +20,12 @@ $color-dark: #333;
 // Temp
 .h {
   font-family: $font-primary;
-  font-weight: 100;
+  font-weight: 600;
+}
+
+.h--mobile {
+  align-self: flex-start;
+  padding-left: 1.5rem;
 }
 .h--xLarge {
   font-size: 5rem;
@@ -37,13 +42,32 @@ $color-dark: #333;
 }
 .h--small {
   font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
+.paragraph {
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  width: 80%;
+  margin: 0.5rem 0;
+  line-height: 2.1rem;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90%;
+  }
+}
+
+// remove
 .p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 1.4px;
   font-family: $font-primary;
 }
+// /////////////
 
 .mb-2 {
   margin-bottom: 2rem;
