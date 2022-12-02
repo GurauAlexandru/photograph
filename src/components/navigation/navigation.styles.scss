@@ -22,7 +22,7 @@
 
   @media only screen and (max-width: $bp-small) {
     justify-content: end;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
 
   &__link {
@@ -31,11 +31,16 @@
     font-family: $font-primary;
     color: $color-dark;
 
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+
     &--mobile {
       font-size: 3rem;
       margin-bottom: 1rem;
       width: 100%;
       text-align: center;
+      display: block;
     }
   }
 }
