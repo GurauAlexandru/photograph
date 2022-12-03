@@ -8,6 +8,7 @@ import Box from '../../components/box/box.component';
 import img from '../../assets/images/wallpaper-home-c.jpg';
 import Button from '../../components/button/button.component';
 import Banner from '../../components/banner/banner.component';
+import PhotoColaje from '../../components/photo-colaj/photo-colaje.component';
 
 import wallpaperWelcome from '../../assets/images/wallpaper-welcome-c.jpg';
 
@@ -79,7 +80,7 @@ const HomePage = () => {
       <Banner />
       <Container>
         <Title firstTitle='My work' />
-        <section className='photo-colaje'></section>
+        <PhotoColaje />
       </Container>
     </>
   );
