@@ -1,0 +1,40 @@
+@import '../../styles/styles';
+
+.banner {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: $color-primary;
+  margin-bottom: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    height: 45rem;
+    flex-direction: column;
+    padding: 3rem 1rem 1rem 1rem;
+    justify-content: space-between;
+  }
+
+  h2 {
+    width: 50%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  &__wallpaper {
+    height: 20rem;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

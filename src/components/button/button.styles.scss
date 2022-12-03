@@ -23,3 +23,15 @@
     display: block;
   }
 }
+
+.button--cta {
+  height: 12rem;
+  width: 20rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: $color-primary;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

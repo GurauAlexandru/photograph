@@ -6,6 +6,8 @@ import Container from '../../components/container/container.component';
 import Boxes from '../../components/boxes/boxes.component';
 import Box from '../../components/box/box.component';
 import img from '../../assets/images/wallpaper-home-c.jpg';
+import Button from '../../components/button/button.component';
+import Banner from '../../components/banner/banner.component';
 
 import wallpaperWelcome from '../../assets/images/wallpaper-welcome-c.jpg';
 
@@ -18,6 +20,14 @@ const HomePage = () => {
         alt='image alt'
         title='Title'
         description='Welcome to home page'
+        children={
+          <Button
+            className='button--cta'
+            onClick={() => console.log('My work')}
+          >
+            My work
+          </Button>
+        }
       />
       <Container>
         <Title firstTitle='Title' />
@@ -65,6 +75,11 @@ const HomePage = () => {
               neque, perferendis voluptatum quam minus odit.'
           />
         </Boxes>
+      </Container>
+      <Banner />
+      <Container>
+        <Title firstTitle='My work' />
+        <section className='photo-colaje'></section>
       </Container>
     </>
   );
