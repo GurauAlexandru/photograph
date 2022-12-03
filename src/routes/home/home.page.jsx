@@ -82,6 +82,42 @@ const HomePage = () => {
         <Title firstTitle='My work' />
         <PhotoColaje />
       </Container>
+
+      <Container>
+        <Title firstTitle='Servicii oferite' />
+        <Boxes>
+          <Box
+            number='01'
+            title='First'
+            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+              neque, perferendis voluptatum quam minus odit.'
+          />
+          <Box
+            number='02'
+            title='Second'
+            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+              neque, perferendis voluptatum quam minus odit.'
+          />
+          <Box
+            number='03'
+            title='Third'
+            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+              neque, perferendis voluptatum quam minus odit.'
+          />
+          <Box
+            number='04'
+            title='Forth'
+            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+              neque, perferendis voluptatum quam minus odit.'
+          />
+          <Box
+            number='05'
+            title='Fifth'
+            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+              neque, perferendis voluptatum quam minus odit.'
+          />
+        </Boxes>
+      </Container>
     </>
   );
 };
