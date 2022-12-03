@@ -9,15 +9,10 @@ import img from '../../assets/images/wallpaper-home-c.jpg';
 import Button from '../../components/button/button.component';
 import Banner from '../../components/banner/banner.component';
 import PhotoColaje from '../../components/photo-colaj/photo-colaje.component';
+import Modal from '../../components/modal/modal.component';
+import Footer from '../../components/footer/footer.component';
 
 import wallpaperWelcome from '../../assets/images/wallpaper-welcome-c.jpg';
-
-import img1 from '../../assets/images/wallpaper-contact-c.jpg';
-import img2 from '../../assets/images/wallpaper-banner.jpg';
-import img3 from '../../assets/images/wallpaper-albums-c.jpg';
-import img4 from '../../assets/images/wallpaper-despre-c.jpg';
-import img5 from '../../assets/images/wallpaper-home-c.jpg';
-import img6 from '../../assets/images/wallpaper-welcome-c.jpg';
 
 const HomePage = () => {
   return (
@@ -127,15 +122,9 @@ const HomePage = () => {
       </Container>
       <Container>
         <Title firstTitle='Modal' />
-        <section className='modal'>
-          <img src={img1} alt='wallpaper' className='modal__image' />
-          <img src={img2} alt='wallpaper' className='modal__image' />
-          <img src={img3} alt='wallpaper' className='modal__image' />
-          <img src={img4} alt='wallpaper' className='modal__image' />
-          <img src={img5} alt='wallpaper' className='modal__image' />
-          <img src={img6} alt='wallpaper' className='modal__image' />
-        </section>
+        <Modal />
       </Container>
+      <Footer />
     </>
   );
 };

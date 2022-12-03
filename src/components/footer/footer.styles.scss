@@ -1,0 +1,14 @@
+@import '../../styles/styles';
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: $color-dark;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// add footer elements
