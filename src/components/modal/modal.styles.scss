@@ -7,6 +7,8 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   gap: 1rem;
 
   @media only screen and (max-width: $bp-medium) {
@@ -14,14 +16,14 @@
   }
   @media only screen and (max-width: $bp-small) {
     margin: 1rem 0;
-    height: 55%;
+    height: 50%;
   }
 
   &__image {
     width: 30%;
 
     @media only screen and (max-width: $bp-small) {
-      width: 50%;
+      width: 48%;
     }
   }
 }
