@@ -1,5 +1,5 @@
 import './banner.styles.scss';
-import wallpaperBanner from '../../assets/images/wallpaper-banner.jpg';
+import wallpaperBanner from '../../assets/poze/wallpaper--5.jpg';
 
 const Banner = () => (
   <section className='banner'>

@@ -1,11 +1,11 @@
 import './modal.styles.scss';
 
-import img1 from '../../assets/images/wallpaper-contact-c.jpg';
-import img2 from '../../assets/images/wallpaper-banner.jpg';
-import img3 from '../../assets/images/wallpaper-albums-c.jpg';
-import img4 from '../../assets/images/wallpaper-despre-c.jpg';
-import img5 from '../../assets/images/wallpaper-home-c.jpg';
-import img6 from '../../assets/images/wallpaper-welcome-c.jpg';
+import img1 from '../../assets/poze/modal/poza--1.jpg';
+import img2 from '../../assets/poze/modal/poza--2.jpg';
+import img3 from '../../assets/poze/modal/poza--3.jpg';
+import img4 from '../../assets/poze/modal/poza--4.jpg';
+import img5 from '../../assets/poze/modal/poza--5.jpg';
+import img6 from '../../assets/poze/modal/poza--6.jpg';
 
 const imgs = [
   { img: img1, id: 1 },

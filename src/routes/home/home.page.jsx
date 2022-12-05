@@ -5,14 +5,15 @@ import Title from '../../components/title/title.component';
 import Container from '../../components/container/container.component';
 import Boxes from '../../components/boxes/boxes.component';
 import Box from '../../components/box/box.component';
-import img from '../../assets/images/wallpaper-home-c.jpg';
 import Button from '../../components/button/button.component';
 import Banner from '../../components/banner/banner.component';
 import PhotoColaje from '../../components/photo-colaj/photo-colaje.component';
 import Modal from '../../components/modal/modal.component';
 import Footer from '../../components/footer/footer.component';
 
-import wallpaperWelcome from '../../assets/images/wallpaper-welcome-c.jpg';
+// Images
+import img from '../../assets/poze/wallpaper--1.jpg';
+import wallpaperWelcome from '../../assets/poze/wallpaper--3.jpg';
 
 const HomePage = () => {
   return (
