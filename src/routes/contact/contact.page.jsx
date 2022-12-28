@@ -34,7 +34,7 @@ const ContactPage = () => {
             </a>
             <a href='mailto:fotograf@email.com' className='social-link'>
               <img alt='Send me an email' src={emailLogo} className='icon' />{' '}
-              Send email
+              Email
             </a>
           </section>
         </main>

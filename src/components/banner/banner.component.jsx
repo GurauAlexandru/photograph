@@ -1,10 +1,10 @@
 import './banner.styles.scss';
-import wallpaperBanner from '../../assets/poze/wallpaper--5.jpg';
+import wallpaperBanner from '../../assets/poze/wallpaper--5.webp';
 
 const Banner = () => (
   <section className='banner'>
     <h2 className='h h--small'>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, non?
+      Viitorul aparține celor care cred în visele lor
     </h2>
     <img
       src={wallpaperBanner}

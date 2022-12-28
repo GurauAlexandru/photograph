@@ -1,13 +1,13 @@
 import './photo-colaje.styles.scss';
 
-import colaj1 from '../../assets/poze/colaj/poza--1.jpg';
-import colaj2 from '../../assets/poze/colaj/poza--2.jpg';
-import colaj3 from '../../assets/poze/colaj/poza--3.jpg';
-import colaj4 from '../../assets/poze/colaj/poza--4.jpg';
-import colaj5 from '../../assets/poze/colaj/poza--5.jpg';
-import colaj6 from '../../assets/poze/colaj/poza--6.jpg';
-import colaj7 from '../../assets/poze/colaj/poza--7.jpg';
-import colaj8 from '../../assets/poze/colaj/poza--8.jpg';
+import colaj1 from '../../assets/poze/colaj/poza--1.webp';
+import colaj2 from '../../assets/poze/colaj/poza--2.webp';
+import colaj3 from '../../assets/poze/colaj/poza--3.webp';
+import colaj4 from '../../assets/poze/colaj/poza--4.webp';
+import colaj5 from '../../assets/poze/colaj/poza--5.webp';
+import colaj6 from '../../assets/poze/colaj/poza--6.webp';
+import colaj7 from '../../assets/poze/colaj/poza--7.webp';
+import colaj8 from '../../assets/poze/colaj/poza--8.webp';
 
 const PhotoColaje = () => (
   <section className='photo-colaje'>

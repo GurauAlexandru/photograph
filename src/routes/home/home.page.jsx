@@ -5,15 +5,18 @@ import Title from '../../components/title/title.component';
 import Container from '../../components/container/container.component';
 import Boxes from '../../components/boxes/boxes.component';
 import Box from '../../components/box/box.component';
-import Button from '../../components/button/button.component';
+// import Button from '../../components/button/button.component';
 import Banner from '../../components/banner/banner.component';
 import PhotoColaje from '../../components/photo-colaj/photo-colaje.component';
 import Modal from '../../components/modal/modal.component';
 import Footer from '../../components/footer/footer.component';
 
 // Images
-import img from '../../assets/poze/wallpaper--1.jpg';
-import wallpaperWelcome from '../../assets/poze/wallpaper--3.jpg';
+import img from '../../assets/poze/wallpaper--1.webp';
+import wallpaperWelcome from '../../assets/poze/wallpaper--3.webp';
+
+// test WhatsApp as CTA
+import whatsappLogo from '../../assets/icons/WhatsAppButtonGreenLarge.svg';
 
 const HomePage = () => {
   return (
@@ -22,19 +25,22 @@ const HomePage = () => {
       <Header
         img={img}
         alt='image alt'
-        title='Florin Gireada'
+        title='Florin Gireadă'
         description='Fotograf profesionist'
         children={
-          <Button
-            className='button--cta'
-            onClick={() => console.log('My work')}
-          >
-            My work
-          </Button>
+          // <Button
+          //   className='button--cta'
+          //   onClick={() => console.log('My work')}
+          // >
+          //   My work
+          // </Button>
+          <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
+            <img alt='Chat on WhatsApp' src={whatsappLogo} />
+          </a>
         }
       />
       <Container>
-        <Title firstTitle='Title' />
+        <Title firstTitle='Fotografia' />
         <section className='welcome'>
           <img
             src={wallpaperWelcome}
@@ -43,16 +49,14 @@ const HomePage = () => {
           />
 
           <div className='welcome__box'>
-            <h3 className='h h--small h--mobile'>Title small</h3>
-            <p className='paragraph'>Lorem ipsum dolor sit amet.</p>
+            <h3 className='h h--small h--mobile handwrite'>
+              Momente de neuitat
+            </h3>
             <p className='paragraph'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <p className='paragraph'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit. Eaque voluptatem
-              alias suscipit molestias. Voluptatibus, distinctio. Debitis,
-              aliquam!
+              Iubirea, Increderea și prietenia sunt tainele celui mai frumos
+              parcurs în doi, colectionand momente, zâmbete și împliniri spre a
+              fi păstrate pentru totdeauna. Împreună astăzi înseamnă toată
+              fericirea unei întregi vieți.
             </p>
           </div>
         </section>
@@ -87,35 +91,35 @@ const HomePage = () => {
       </Container>
 
       <Container>
-        <Title firstTitle='Servicii oferite' />
+        <Title firstTitle='Evenimente' />
         <Boxes>
           <Box
             number='01'
-            title='First'
+            title='Nunți'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='02'
-            title='Second'
+            title='Botezuri'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='03'
-            title='Third'
+            title='Familie'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='04'
-            title='Forth'
+            title='Studio'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='05'
-            title='Fifth'
+            title='Produse'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />

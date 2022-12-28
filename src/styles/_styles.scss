@@ -1,9 +1,11 @@
 // Font type
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 // $font-primary: 'Italiana', serif;
 $font-primary: 'Playfair Display', serif;
+$font-handwrite: 'Caveat', cursive;
 
 // Breakpoints
 $bp-4k: 156em; // 2500px
@@ -50,7 +52,7 @@ $color-dark: #333;
   font-size: 3.5rem;
 }
 .h--small {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 3rem;
 
   &__cart {
@@ -63,7 +65,8 @@ $color-dark: #333;
   font-family: $font-primary;
   width: 80%;
   margin: 0.5rem 0;
-  line-height: 2.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.5px;
 
   @media only screen and (max-width: $bp-large) {
     width: 70%;
@@ -86,6 +89,12 @@ $color-dark: #333;
   font-family: $font-primary;
 }
 // /////////////
+
+// Handwrite
+.handwrite {
+  font-family: $font-handwrite;
+  font-size: 3rem;
+}
 
 .mb-2 {
   margin-bottom: 2rem;
