@@ -22,8 +22,8 @@ const HomePage = () => {
       <Header
         img={img}
         alt='image alt'
-        title='Title'
-        description='Welcome to home page'
+        title='Florin Gireada'
+        description='Fotograf profesionist'
         children={
           <Button
             className='button--cta'
