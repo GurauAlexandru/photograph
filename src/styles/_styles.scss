@@ -16,7 +16,8 @@ $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
 // Colors
-$color-primary: #e1b692;
+// $color-primary: #e1b692;
+$color-primary: #124559;
 $color-dark: #333;
 
 // Temp
@@ -35,7 +36,7 @@ $color-dark: #333;
 .h--cart {
   font-size: 5rem;
   font-weight: 300;
-  color: #e1b692;
+  color: $color-primary;
 }
 
 .h--xLarge {
@@ -67,6 +68,7 @@ $color-dark: #333;
   margin: 0.5rem 0;
   line-height: 2.5rem;
   letter-spacing: 1.5px;
+  color: $color-primary;
 
   @media only screen and (max-width: $bp-large) {
     width: 70%;

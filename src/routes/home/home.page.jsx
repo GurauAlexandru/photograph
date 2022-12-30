@@ -50,7 +50,7 @@ const HomePage = () => {
 
           <div className='welcome__box'>
             <h3 className='h h--small h--mobile handwrite'>
-              Momente de neuitat --updated
+              Momente de neuitat
             </h3>
             <p className='paragraph'>
               Iubirea, Increderea și prietenia sunt tainele celui mai frumos
@@ -66,19 +66,19 @@ const HomePage = () => {
         <Boxes>
           <Box
             number='01'
-            title='First'
+            title='Cel mai bun fotograf'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='02'
-            title='Second'
+            title='Orientat spre client'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
           <Box
             number='03'
-            title='Third'
+            title='Rezultate excelente'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
               neque, perferendis voluptatum quam minus odit.'
           />
@@ -86,7 +86,7 @@ const HomePage = () => {
       </Container>
       <Banner />
       <Container>
-        <Title firstTitle='My work' />
+        <Title firstTitle='Cele mai noi poze' />
         <PhotoColaje />
       </Container>
 
