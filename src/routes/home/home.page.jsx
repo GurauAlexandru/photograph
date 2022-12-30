@@ -50,7 +50,7 @@ const HomePage = () => {
 
           <div className='welcome__box'>
             <h3 className='h h--small h--mobile handwrite'>
-              Momente de neuitat
+              Momente de neuitat --updated
             </h3>
             <p className='paragraph'>
               Iubirea, Increderea și prietenia sunt tainele celui mai frumos

@@ -7,6 +7,7 @@ const Banner = () => (
       Viitorul aparține celor care cred în visele lor
     </h2>
     <img
+      // height='200px'
       src={wallpaperBanner}
       alt='wallpaper banner'
       className='banner__wallpaper'

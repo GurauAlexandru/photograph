@@ -30,6 +30,7 @@
   }
   &__wallpaper {
     height: 20rem;
+    width: auto;
     border-radius: 5px;
 
     @media only screen and (max-width: $bp-small) {
