@@ -126,7 +126,7 @@ const HomePage = () => {
         </Boxes>
       </Container>
       <Container>
-        <Title firstTitle='Modal' />
+        <Title firstTitle='Portofoliu' />
         <Modal />
       </Container>
       <Footer />

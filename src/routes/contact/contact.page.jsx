@@ -1,43 +1,48 @@
 import './contact.styles.scss';
 import Navigation from '../../components/navigation/navigation.component';
-import Header from '../../components/header/header.component';
-
-import img from '../../assets/images/wallpaper-contact-c.jpg';
-
+import wallpaper from '../../assets/images/wallpapers/Chat.jpg';
 import whatsappLogo from '../../assets/icons/WhatsAppButtonGreenLarge.svg';
+import myLogo from '../../assets/icons/logo--black.png';
 import emailLogo from '../../assets/icons/email.svg';
 
 const ContactPage = () => {
   return (
     <>
       <Navigation />
-      <Header
-        img={img}
-        alt='img text'
-        title='Contact page'
-        description='welcome to contact page'
-      />
       <div className='contact-page'>
-        <main className='contact-page__main'>
-          <section className='contact-page__program'>
-            <h3 className='h h--large'>Salut, </h3>
-            <p className='p contact-page__text'>
-              Mă poți <span>contacta</span> de <span>luni</span> până{' '}
-              <span>vineri</span> între orele <span>08:00</span> -{' '}
-              <span>16:00</span> cu un simplu <span>click</span> pe oricare
-              dintre pictogramele afișate.{' '}
+        <div className='contact-page__imageBox'>
+          <img
+            src={wallpaper}
+            alt='chat wallpaper'
+            className='contact-page__image'
+          />
+        </div>
+        <div className='contact-page__contactBox'>
+          <div className='contact-page__contactBox--box'>
+            <h3 className='h h--small'>Salut,</h3>
+            <p className='paragraph'>
+              Mă poți contacta cu un simplu click pe oricare pictogramă de mai
+              jos:
             </p>
-          </section>
-          <section className='contact-page__messenger'>
-            <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
-              <img alt='Chat on WhatsApp' src={whatsappLogo} />
-            </a>
-            <a href='mailto:fotograf@email.com' className='social-link'>
-              <img alt='Send me an email' src={emailLogo} className='icon' />{' '}
-              Email
-            </a>
-          </section>
-        </main>
+
+            <div className='contact-page__contactBox--box__socialButtons'>
+              <a
+                aria-label='Chat on WhatsApp'
+                href='https://wa.me/+40747111222'
+              >
+                <img alt='Chat on WhatsApp' src={whatsappLogo} />
+              </a>
+
+              <a href='mailto:fotograf@email.com' className='social-link'>
+                <img alt='email' src={emailLogo} className='icon' /> Email
+              </a>
+            </div>
+
+            <p className='paragraph'>De asemenea, imi poți da un follow pe:</p>
+
+            <img src={myLogo} alt='semnatura mea' className='my-logo' />
+          </div>
+        </div>
       </div>
     </>
   );

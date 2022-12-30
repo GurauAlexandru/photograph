@@ -33,7 +33,7 @@ const Navigation = () => {
           Despre
         </Link>
         <Link to='/contact' className='navigation__link'>
-          Contact me
+          Contact
         </Link>
 
         <Button

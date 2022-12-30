@@ -15,6 +15,10 @@ const PhotoColaje = () => (
       className='photo-colaje--1 photo-colaje__img'
       style={{ backgroundImage: `url(${colaj1})` }}
     ></div>
+    <div className='photo-colaje--text-1'>
+      <p className='paragraph'>"O poză face cât o mie de cuvinte."</p>
+      <p className='paragraph'>(Proverb Chinezesc)</p>
+    </div>
     <div
       className='photo-colaje--2 photo-colaje__img'
       style={{ backgroundImage: `url(${colaj2})` }}
