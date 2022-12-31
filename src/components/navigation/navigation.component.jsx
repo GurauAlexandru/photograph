@@ -81,7 +81,7 @@ const Navigation = () => {
                   className='navigation__link navigation__link--mobile'
                   onClick={() => turnOff()}
                 >
-                  Contact me
+                  Contact
                 </Link>
               </DropdownMenu>
             </>
