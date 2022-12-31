@@ -1,6 +1,6 @@
 @import '../../styles/styles';
 
-.modal {
+.portofoliu {
   height: auto;
   width: 80%;
   margin: 0;
@@ -20,6 +20,8 @@
 
   &__image {
     width: 30%;
+    border-radius: 5px;
+    box-shadow: $shadow-image;
 
     @media only screen and (max-width: $bp-small) {
       width: 48%;

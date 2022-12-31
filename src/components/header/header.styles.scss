@@ -50,13 +50,8 @@
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    box-shadow: $shadow-image;
 
-    // @media only screen and (min-width: $bp-4k) {
-    //   width: 70%;
-    // }
-    // @media only screen and (max-width: $bp-large) {
-    //   width: 90%;
-    // }
     @media only screen and (max-width: $bp-small) {
       width: 95%;
     }

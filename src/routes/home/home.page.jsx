@@ -1,22 +1,19 @@
 import './home.styles.scss';
+import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
 import Header from '../../components/header/header.component';
 import Title from '../../components/title/title.component';
 import Container from '../../components/container/container.component';
 import Boxes from '../../components/boxes/boxes.component';
 import Box from '../../components/box/box.component';
-// import Button from '../../components/button/button.component';
 import Banner from '../../components/banner/banner.component';
 import PhotoColaje from '../../components/photo-colaj/photo-colaje.component';
-import Modal from '../../components/modal/modal.component';
+import Portofoliu from '../../components/portofoliu/portofoliu.component';
 import Footer from '../../components/footer/footer.component';
 
 // Images
 import img from '../../assets/poze/wallpaper--1.webp';
 import wallpaperWelcome from '../../assets/poze/wallpaper--3.webp';
-
-// test WhatsApp as CTA
-import whatsappLogo from '../../assets/icons/WhatsAppButtonGreenLarge.svg';
 
 const HomePage = () => {
   return (
@@ -28,15 +25,9 @@ const HomePage = () => {
         title='Florin Gireadă'
         description='Fotograf profesionist'
         children={
-          // <Button
-          //   className='button--cta'
-          //   onClick={() => console.log('My work')}
-          // >
-          //   My work
-          // </Button>
-          <a aria-label='Chat on WhatsApp' href='https://wa.me/+40747111222'>
-            <img alt='Chat on WhatsApp' src={whatsappLogo} />
-          </a>
+          <Link to='/contact' className='button--cta'>
+            Contactează-mă
+          </Link>
         }
       />
       <Container>
@@ -127,7 +118,7 @@ const HomePage = () => {
       </Container>
       <Container>
         <Title firstTitle='Portofoliu' />
-        <Modal />
+        <Portofoliu />
       </Container>
       <Footer />
     </>

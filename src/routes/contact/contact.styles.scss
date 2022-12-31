@@ -59,6 +59,9 @@
       border-radius: 10px;
       z-index: 2;
 
+      background-color: #fff1e6;
+      // background-color: white;
+
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -96,7 +99,7 @@
 .container__social-buttons {
   width: 100%;
   height: auto;
-  margin: 1rem 0;
+  margin: 2rem 0;
 
   display: flex;
   justify-content: center;
