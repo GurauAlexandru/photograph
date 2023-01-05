@@ -1,5 +1,5 @@
 import './home.styles.scss';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
 import Header from '../../components/header/header.component';
 import Title from '../../components/title/title.component';
@@ -24,11 +24,11 @@ const HomePage = () => {
         alt='image alt'
         title='Florin Gireadă'
         description='Fotograf profesionist'
-        children={
-          <Link to='/contact' className='button--cta'>
-            Contactează-mă
-          </Link>
-        }
+        // children={
+        //   <Link to='/contact' className='button--cta'>
+        //     Contactează-mă
+        //   </Link>
+        // }
       />
       <Container>
         <Title firstTitle='Fotografia' />
