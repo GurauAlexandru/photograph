@@ -8,26 +8,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  &__wallpaper {
-    height: 35rem;
-    width: 30rem;
-    margin-right: -10rem;
-    margin-top: 5rem;
-    z-index: 1;
-
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-
-    @media only screen and (max-width: $bp-small) {
-      margin-top: 3rem;
-      margin-right: 0;
-      margin-bottom: -3rem;
-    }
-  }
 }
 
-.album-preview {
+.album-welcome {
   height: 50rem;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
@@ -82,6 +65,23 @@
   }
 
   &__wallpaper {
+    height: 35rem;
+    width: 30rem;
+    margin-right: -10rem;
+    margin-top: 5rem;
+    z-index: 1;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+      margin-right: 0;
+      margin-bottom: -3rem;
+    }
+  }
+
+  &__picture {
     height: 30rem;
     width: auto;
     margin-left: 10rem;
@@ -96,5 +96,39 @@
       margin-bottom: 0;
       margin-top: -5rem;
     }
+  }
+}
+
+.album-noName {
+  width: 100%;
+  height: auto;
+  padding: 3rem 30rem;
+  margin: 5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem 20rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem 10rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+  }
+
+  &__bar {
+    height: 2px;
+    width: 10rem;
+    background-color: black;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
   }
 }

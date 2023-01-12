@@ -9,8 +9,8 @@ const AlbumsPage = () => {
     <>
       <Navigation />
       <main className='album-page'>
-        <section className='album-preview'>
-          <div className='album-preview__container'>
+        <section className='album-welcome'>
+          <div className='album-welcome__container'>
             <h1 className='h h--xLarge'>Albume foto</h1>
             <p className='paragraph'>
               Mai jos vei găsi linkurile catre albumele de nunți, botezuri, poze
@@ -20,15 +20,26 @@ const AlbumsPage = () => {
           <img
             src={brideWallaper}
             alt='album wallpaper 2'
-            className='album-page__wallpaper'
+            className='album-welcome__wallpaper'
           />
-          <div className='album-preview__box'>
+          <div className='album-welcome__box'>
             <img
               src={albumWallpaper}
               alt='album wallpaper'
-              className='album-preview__wallpaper'
+              className='album-welcome__picture'
             />
           </div>
+        </section>
+        <section className='album-noName'>
+          <div className='album-noName__bar'></div>
+          <p className='paragraph'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            eveniet exercitationem unde eum nihil ipsum est officia doloribus
+            reiciendis, deserunt voluptatibus praesentium earum. Autem
+            temporibus pariatur nisi laborum officiis debitis vitae, unde modi
+            velit ea.
+          </p>
+          <div className='album-noName__bar'></div>
         </section>
       </main>
       <Footer />

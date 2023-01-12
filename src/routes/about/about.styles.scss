@@ -77,8 +77,13 @@
   &__foto {
     height: auto;
     width: 80%;
-    outline: 5px solid $color-dark;
-    outline-offset: 1rem;
+    // outline: 5px solid $color-dark;
+    // outline-offset: 1rem;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: $shadow-image;
 
     @media only screen and (max-width: $bp-small) {
       width: 100%;
