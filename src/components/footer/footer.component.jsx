@@ -10,7 +10,7 @@ const Footer = () => (
       <h3 className='h h--small handwrite'>Fotograf profesionist</h3>
       <div className='container__social-buttons'>
         <a
-          href='https://www.facebook.com/'
+          href='https://www.facebook.com/Fllorrinn'
           className='social-icon'
           target='_blank'
           rel='noreferrer'
