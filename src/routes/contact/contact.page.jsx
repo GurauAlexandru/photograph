@@ -31,19 +31,19 @@ const ContactPage = () => {
             </p>
 
             <div className='container__contact-buttons'>
-              <a
-                aria-label='Chat on WhatsApp'
-                href='https://wa.me/+40747111222'
-              >
-                <img alt='Chat on WhatsApp' src={whatsappLogo} />
-              </a>
-
               <a href='mailto:fotograf@email.com' className='social-link'>
                 <img alt='email' src={emailLogo} className='icon' /> Email
               </a>
               <a href='tel:0747111222' className='social-link'>
                 <img alt='telefon' src={phoneLogo} className='icon' />{' '}
                 0747111222
+              </a>
+
+              <a
+                aria-label='Chat on WhatsApp'
+                href='https://wa.me/+40747111222'
+              >
+                <img alt='Chat on WhatsApp' src={whatsappLogo} />
               </a>
             </div>
 
