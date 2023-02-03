@@ -31,7 +31,6 @@ const HomePage = () => {
         // }
       />
       <Container>
-        <Title firstTitle='Fotografia' />
         <section className='welcome'>
           <img
             src={wallpaperWelcome}

@@ -10,7 +10,7 @@
   gap: 5rem;
 
   @media only screen and (max-width: $bp-small) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     gap: 0;
     // margin: 3rem 0;
