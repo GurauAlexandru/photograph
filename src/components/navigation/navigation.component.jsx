@@ -26,10 +26,10 @@ const Navigation = () => {
         <Link to='/' className='navigation__link'>
           Acasa
         </Link>
-        <Link to='/albums' className='navigation__link'>
+        <Link to='/albume' className='navigation__link'>
           Albume
         </Link>
-        <Link to='/about' className='navigation__link'>
+        <Link to='/despre-mine' className='navigation__link'>
           Despre
         </Link>
         <Link to='/contact' className='navigation__link'>
@@ -63,14 +63,14 @@ const Navigation = () => {
                   Acasa
                 </Link>
                 <Link
-                  to='/albums'
+                  to='/albume'
                   className='navigation__link navigation__link--mobile'
                   onClick={() => turnOff()}
                 >
                   Albume
                 </Link>
                 <Link
-                  to='/about'
+                  to='/despre-mine'
                   className='navigation__link navigation__link--mobile'
                   onClick={() => turnOff()}
                 >

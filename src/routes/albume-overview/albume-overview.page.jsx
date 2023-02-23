@@ -1,4 +1,4 @@
-import './albums.styles.scss';
+import './albume-overview.styles.scss';
 import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
 import AlbumPreview from '../../components/album/album-preview/album-preview.component';
@@ -10,7 +10,7 @@ import nuntiPrev from '../../assets/poze/coperta/nunta--1.webp';
 import botezPrev from '../../assets/poze/coperta/botez--1.webp';
 import studioPrev from '../../assets/poze/coperta/studio--1.webp';
 
-const AlbumsPage = () => {
+const AlbumeOverview = () => {
   return (
     <>
       <Navigation />
@@ -36,8 +36,8 @@ const AlbumsPage = () => {
           blanditiis accusantium magni ipsa in! Molestias natus et officiis eaque!
           Quibusdam rerum tenetur laudantium consequuntur.'
           link={
-            <Link to='/' className='link--album-prev'>
-              Home
+            <Link to='/albume/nunti/' className='link--album-prev'>
+              Vezi albumele
             </Link>
           }
         />
@@ -51,8 +51,8 @@ const AlbumsPage = () => {
           blanditiis accusantium magni ipsa in! Molestias natus et officiis eaque!
           Quibusdam rerum tenetur laudantium consequuntur.'
           link={
-            <Link to='/' className='link--album-prev'>
-              Home
+            <Link to='/albume/botezuri' className='link--album-prev'>
+              Vezi albumele
             </Link>
           }
         />
@@ -65,8 +65,8 @@ const AlbumsPage = () => {
           blanditiis accusantium magni ipsa in! Molestias natus et officiis eaque!
           Quibusdam rerum tenetur laudantium consequuntur.'
           link={
-            <Link to='/' className='link--album-prev'>
-              Home
+            <Link to='/albume/studio/' className='link--album-prev'>
+              Vezi albumele
             </Link>
           }
         />
@@ -76,4 +76,4 @@ const AlbumsPage = () => {
   );
 };
 
-export default AlbumsPage;
+export default AlbumeOverview;

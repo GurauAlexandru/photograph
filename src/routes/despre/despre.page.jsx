@@ -1,9 +1,9 @@
-import './about.styles.scss';
+import './despre.styles.scss';
 import Navigation from '../../components/navigation/navigation.component';
 import signagureLogo from '../../assets/icons/logo--black.png';
 import fotografFoto from '../../assets/images/wallpaper-photograph.jpg';
 
-const AboutPage = () => {
+const DesprePage = () => {
   return (
     <>
       <Navigation />
@@ -47,4 +47,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default DesprePage;

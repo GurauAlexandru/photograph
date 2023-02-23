@@ -3,16 +3,16 @@ import './App.css';
 
 // Pages
 import HomePage from './routes/home/home.page';
-import AlbumsPage from './routes/albums/albums.page';
-import AboutPage from './routes/about/about.page';
+import DesprePage from './routes/despre/despre.page';
 import ContactPage from './routes/contact/contact.page';
+import Albume from './routes/albume/albume.page';
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />
-      <Route path='/albums' element={<AlbumsPage />} />
-      <Route path='/about' element={<AboutPage />} />
+      <Route path='/albume/*' element={<Albume />} />
+      <Route path='/despre-mine' element={<DesprePage />} />
       <Route path='/contact' element={<ContactPage />} />
     </Routes>
   );
