@@ -1,15 +1,22 @@
 import './album-preview.styles.scss';
+import AlbumPreviewPicture from '../album-preview-picture/album-preview-picture.component';
+import nuntiPrev from '../../../assets/poze/coperta/nunta--1.webp';
+import pozaNunta1 from '../../../assets/poze/colaj/poza--1.webp';
+import pozaNunta2 from '../../../assets/poze/colaj/poza--2.webp';
 
-const AlbumPreview = ({ img, alt, smallTitle, title, paragraph, link }) => (
-  <section className='album-preview'>
-    <img src={img} alt={alt} className='album-preview__img' />
-    <div className='album-preview__box'>
-      <h3 className='h h--small'>{smallTitle}</h3>
-      <h2 className='h--large'>{title}</h2>
-      <p className='paragraph'>{paragraph}</p>
-      {link}
-    </div>
-  </section>
-);
+const AlbumPreview = () => {
+  return (
+    <>
+      <section className='album-preview'>
+        <h3 className='h h--small handwrite'>Will & Jessica</h3>
+        <div className='album-preview__container'>
+          <AlbumPreviewPicture imagine={nuntiPrev} alt='album title' />
+          <AlbumPreviewPicture imagine={pozaNunta1} alt='album title' />
+          <AlbumPreviewPicture imagine={pozaNunta2} alt='album title' />
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default AlbumPreview;

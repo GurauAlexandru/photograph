@@ -1,7 +1,7 @@
 import './albume-overview.styles.scss';
 import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
-import AlbumPreview from '../../components/album/album-preview/album-preview.component';
+import AlbumCollectionPreview from '../../components/album/album-collection-preview/album-collection-preview.component';
 import AlbumWelcome from '../../components/album/album-welcome/album-welcome.component';
 import Footer from '../../components/footer/footer.component';
 import albumWallpaper from '../../assets/poze/wallpaper--albums.webp';
@@ -14,7 +14,7 @@ const AlbumeOverview = () => {
   return (
     <>
       <Navigation />
-      <main className='album-page'>
+      <main className='album-overview'>
         <AlbumWelcome img={brideWallaper} picture={albumWallpaper} />
         <section className='album-box'>
           <div className='album-box__bar'></div>
@@ -27,7 +27,7 @@ const AlbumeOverview = () => {
           </p>
           <div className='album-box__bar'></div>
         </section>
-        <AlbumPreview
+        <AlbumCollectionPreview
           img={nuntiPrev}
           alt='albume nunti'
           smallTitle='Lorem ipsum dolor sit amet.'
@@ -42,7 +42,7 @@ const AlbumeOverview = () => {
           }
         />
 
-        <AlbumPreview
+        <AlbumCollectionPreview
           img={botezPrev}
           alt='albume botez'
           smallTitle='Lorem ipsum dolor elit tenetur.'
@@ -56,7 +56,7 @@ const AlbumeOverview = () => {
             </Link>
           }
         />
-        <AlbumPreview
+        <AlbumCollectionPreview
           img={studioPrev}
           alt='albume studio'
           smallTitle='Lorem ipsum dolor elit tenetur.'

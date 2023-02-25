@@ -1,0 +1,17 @@
+@import '../../../styles/styles';
+
+.album-preview--picture {
+  height: 30rem;
+  width: 22rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-preview--img {
+  height: 90%;
+  width: auto;
+  box-shadow: $shadow-image;
+  border-radius: 5px;
+}
