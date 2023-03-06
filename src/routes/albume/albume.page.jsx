@@ -5,6 +5,8 @@ import AlbumeOverview from '../albume-overview/albume-overview.page';
 import AlbumPage from '../album-page/album.page';
 
 import { dbAlbumeNunti } from '../../utils/dbAlbumeNunti.js';
+import { dbAlbumeBotezuri } from '../../utils/dbAlbumeBotezuri.js';
+import { dbAlbumeStudio } from '../../utils/dbAlbumeStudio.js';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -23,8 +25,11 @@ const Albume = () => {
       <Routes>
         <Route index element={<AlbumeOverview />} />
         <Route path='/nunti' element={<AlbumPage event={dbAlbumeNunti} />} />
-        {/* <Route path='/botezuri' element={<AlbumPage />} />
-        <Route path='/studio' element={<AlbumPage />} /> */}
+        <Route
+          path='/botezuri'
+          element={<AlbumPage event={dbAlbumeBotezuri} />}
+        />
+        <Route path='/studio' element={<AlbumPage event={dbAlbumeStudio} />} />
       </Routes>
     </>
   );

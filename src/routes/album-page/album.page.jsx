@@ -22,8 +22,7 @@ const AlbumPage = ({ event }) => {
           return (
             <AlbumPreview
               key={el.id}
-              firstName={el.him}
-              secondName={el.her}
+              header={el.name}
               img1={el.poza1}
               img2={el.poza2}
               img3={el.poza3}
