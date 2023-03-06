@@ -1,18 +1,36 @@
 import './album.styles.scss';
+import { useEffect, useState } from 'react';
 import Navigation from '../../components/navigation/navigation.component';
-// import Footer from '../../components/footer/footer.component';
 import AlbumPreview from '../../components/album/album-preview/album-preview.component';
 
-const AlbumPage = () => {
+const AlbumPage = ({ event }) => {
+  const [data, setData] = useState(event);
+
+  useEffect(() => {
+    async function fetchAPI() {
+      let response = event;
+      setData(response);
+    }
+    fetchAPI();
+  }, [event]);
+
   return (
     <>
       <Navigation />
       <main className='album-page'>
-        <AlbumPreview firstName='Will' secondName='Jessica' />
-        <AlbumPreview firstName='John' secondName='Anna' />
-        <AlbumPreview firstName='Davin' secondName='Maria' />
+        {data.map((el) => {
+          return (
+            <AlbumPreview
+              key={el.id}
+              firstName={el.him}
+              secondName={el.her}
+              img1={el.poza1}
+              img2={el.poza2}
+              img3={el.poza3}
+            />
+          );
+        })}
       </main>
-      {/* <Footer /> */}
     </>
   );
 };

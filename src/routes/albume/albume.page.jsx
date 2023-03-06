@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import AlbumeOverview from '../albume-overview/albume-overview.page';
 import AlbumPage from '../album-page/album.page';
 
+import { dbAlbumeNunti } from '../../utils/dbAlbumeNunti.js';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -20,12 +22,9 @@ const Albume = () => {
       <ScrollToTop />
       <Routes>
         <Route index element={<AlbumeOverview />} />
-        <Route path='/nunti' element={<AlbumPage header='Albume nunti' />} />
-        <Route
-          path='/botezuri'
-          element={<AlbumPage header='Albume botezuri' />}
-        />
-        <Route path='/studio' element={<AlbumPage header='Albume studio' />} />
+        <Route path='/nunti' element={<AlbumPage event={dbAlbumeNunti} />} />
+        {/* <Route path='/botezuri' element={<AlbumPage />} />
+        <Route path='/studio' element={<AlbumPage />} /> */}
       </Routes>
     </>
   );

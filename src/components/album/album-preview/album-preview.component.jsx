@@ -1,10 +1,7 @@
 import './album-preview.styles.scss';
 import AlbumPreviewPicture from '../album-preview-picture/album-preview-picture.component';
-import nuntiPrev from '../../../assets/poze/coperta/nunta--1.webp';
-import pozaNunta1 from '../../../assets/poze/colaj/poza--1.webp';
-import pozaNunta2 from '../../../assets/poze/colaj/poza--2.webp';
 
-const AlbumPreview = ({ firstName, secondName }) => {
+const AlbumPreview = ({ firstName, secondName, img1, img2, img3 }) => {
   return (
     <>
       <section className='album-preview'>
@@ -12,9 +9,18 @@ const AlbumPreview = ({ firstName, secondName }) => {
           {firstName} & {secondName}
         </h3>
         <div className='album-preview__container'>
-          <AlbumPreviewPicture imagine={nuntiPrev} alt='album title' />
-          <AlbumPreviewPicture imagine={pozaNunta1} alt='album title' />
-          <AlbumPreviewPicture imagine={pozaNunta2} alt='album title' />
+          <AlbumPreviewPicture
+            imagine={img1}
+            alt={`Poza ${firstName} & ${secondName}`}
+          />
+          <AlbumPreviewPicture
+            imagine={img2}
+            alt={`Poza ${firstName} & ${secondName}`}
+          />
+          <AlbumPreviewPicture
+            imagine={img3}
+            alt={`Poza ${firstName} & ${secondName}`}
+          />
         </div>
       </section>
     </>
