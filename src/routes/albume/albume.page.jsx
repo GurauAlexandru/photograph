@@ -24,12 +24,39 @@ const Albume = () => {
       <ScrollToTop />
       <Routes>
         <Route index element={<AlbumeOverview />} />
-        <Route path='/nunti' element={<AlbumPage event={dbAlbumeNunti} />} />
+        <Route
+          path='/nunti'
+          element={
+            <AlbumPage
+              title='Albume nunți'
+              event={dbAlbumeNunti}
+              leftBtn='botezuri'
+              rightBtn='studio'
+            />
+          }
+        />
         <Route
           path='/botezuri'
-          element={<AlbumPage event={dbAlbumeBotezuri} />}
+          element={
+            <AlbumPage
+              title='Albume botezuri'
+              event={dbAlbumeBotezuri}
+              leftBtn='nunti'
+              rightBtn='studio'
+            />
+          }
         />
-        <Route path='/studio' element={<AlbumPage event={dbAlbumeStudio} />} />
+        <Route
+          path='/studio'
+          element={
+            <AlbumPage
+              title='Albume studio'
+              event={dbAlbumeStudio}
+              leftBtn='nunti'
+              rightBtn='botezuri'
+            />
+          }
+        />
       </Routes>
     </>
   );

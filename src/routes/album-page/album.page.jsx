@@ -1,9 +1,10 @@
 import './album.styles.scss';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
 import AlbumPreview from '../../components/album/album-preview/album-preview.component';
 
-const AlbumPage = ({ event }) => {
+const AlbumPage = ({ event, title, leftBtn, rightBtn }) => {
   const [data, setData] = useState(event);
 
   useEffect(() => {
@@ -18,6 +19,21 @@ const AlbumPage = ({ event }) => {
     <>
       <Navigation />
       <main className='album-page'>
+        <div className='album-page__header'>
+          <h1 className='h h--xLarge'>{title}</h1>
+          <div className='album-page__link-box'>
+            <Link to={`/albume/${leftBtn}/`} className='album-page__small-link'>
+              {leftBtn}
+            </Link>
+            <div className='album-page__link-box--decoration'></div>
+            <Link
+              to={`/albume/${rightBtn}/`}
+              className='album-page__small-link'
+            >
+              {rightBtn}
+            </Link>
+          </div>
+        </div>
         {data.map((el) => {
           return (
             <AlbumPreview
