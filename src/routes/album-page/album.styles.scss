@@ -10,7 +10,8 @@
   &__header {
     height: auto;
     width: 100%;
-    margin: 5rem 0;
+    padding: 5rem 0;
+    background-color: $color-secondary;
 
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@
     gap: 3rem;
 
     @media only screen and (max-width: $bp-small) {
-      margin: 2rem 0 5rem 0;
+      // margin: 2rem 0 5rem 0;
     }
   }
 

@@ -23,14 +23,14 @@ const AlbumPage = ({ event, title, leftBtn, rightBtn }) => {
           <h1 className='h h--xLarge'>{title}</h1>
           <div className='album-page__link-box'>
             <Link to={`/albume/${leftBtn}/`} className='album-page__small-link'>
-              {leftBtn}
+              {leftBtn.charAt(0).toUpperCase() + leftBtn.slice(1)}
             </Link>
             <div className='album-page__link-box--decoration'></div>
             <Link
               to={`/albume/${rightBtn}/`}
               className='album-page__small-link'
             >
-              {rightBtn}
+              {rightBtn.charAt(0).toUpperCase() + rightBtn.slice(1)}
             </Link>
           </div>
         </div>
