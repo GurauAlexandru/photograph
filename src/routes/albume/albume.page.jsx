@@ -2,7 +2,8 @@ import './albume.styles.scss';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import AlbumeOverview from '../albume-overview/albume-overview.page';
-import AlbumPage from '../album-page/album.page';
+import AlbumCollections from '../album-collections/album-collections.page';
+import AlbumPage from '../album/album.page';
 
 import { dbAlbumeNunti } from '../../utils/dbAlbumeNunti.js';
 import { dbAlbumeBotezuri } from '../../utils/dbAlbumeBotezuri.js';
@@ -27,7 +28,7 @@ const Albume = () => {
         <Route
           path='/nunti'
           element={
-            <AlbumPage
+            <AlbumCollections
               title='Albume nunți'
               event={dbAlbumeNunti}
               leftBtn='botezuri'
@@ -35,10 +36,11 @@ const Albume = () => {
             />
           }
         />
+        <Route path='/nunti/*' element={<AlbumPage event={dbAlbumeNunti} />} />
         <Route
           path='/botezuri'
           element={
-            <AlbumPage
+            <AlbumCollections
               title='Albume botezuri'
               event={dbAlbumeBotezuri}
               leftBtn='nunti'
@@ -47,15 +49,23 @@ const Albume = () => {
           }
         />
         <Route
+          path='/botezuri/*'
+          element={<AlbumPage event={dbAlbumeBotezuri} />}
+        />
+        <Route
           path='/studio'
           element={
-            <AlbumPage
+            <AlbumCollections
               title='Albume studio'
               event={dbAlbumeStudio}
               leftBtn='nunti'
               rightBtn='botezuri'
             />
           }
+        />
+        <Route
+          path='/studio/*'
+          element={<AlbumPage event={dbAlbumeStudio} />}
         />
       </Routes>
     </>

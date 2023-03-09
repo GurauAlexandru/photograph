@@ -2,7 +2,7 @@ import './album-preview.styles.scss';
 import { Link } from 'react-router-dom';
 import AlbumPreviewPicture from '../album-preview-picture/album-preview-picture.component';
 
-const AlbumPreview = ({ header, img1, img2, img3 }) => {
+const AlbumPreview = ({ header, img1, img2, img3, link }) => {
   return (
     <>
       <section className='album-preview'>
@@ -12,7 +12,7 @@ const AlbumPreview = ({ header, img1, img2, img3 }) => {
           <AlbumPreviewPicture imagine={img2} alt={`Poza ${header}`} />
           <AlbumPreviewPicture imagine={img3} alt={`Poza ${header}`} />
         </div>
-        <Link to='#' className='link--album-prev'>
+        <Link to={link} className='link--album-prev'>
           Vezi pozele
         </Link>
       </section>
