@@ -5,17 +5,17 @@ import AlbumPreviewPicture from '../album-preview-picture/album-preview-picture.
 const AlbumPreview = ({ header, img1, img2, img3, link }) => {
   return (
     <>
-      <section className='album-preview'>
+      <Link to={link} className='album-preview'>
         <h3 className='h h--small handwrite'>{header}</h3>
         <div className='album-preview__container'>
           <AlbumPreviewPicture imagine={img1} alt={`Poza ${header}`} />
           <AlbumPreviewPicture imagine={img2} alt={`Poza ${header}`} />
           <AlbumPreviewPicture imagine={img3} alt={`Poza ${header}`} />
         </div>
-        <Link to={link} className='link--album-prev'>
+        {/* <Link to={link} className='link--album-prev'>
           Vezi pozele
-        </Link>
-      </section>
+        </Link> */}
+      </Link>
     </>
   );
 };

@@ -11,6 +11,18 @@ const AlbumPage = ({ event }) => {
 
   const obj = event.find((el) => el.slug === albumName);
 
+  // const myPictures = obj.poze.map((el) => el);
+  // // console.log(myPictures);
+
+  // const testClass = document.getElementsByClassName('album-page__img');
+  // console.log(testClass);
+
+  // for (let i = 0; i <= testClass.length; i++) {
+  //   testClass[i].addEventListener('click', (ev) => {
+  //     console.log(ev);
+  //   });
+  // }
+
   return (
     <section>
       <Navigation />
