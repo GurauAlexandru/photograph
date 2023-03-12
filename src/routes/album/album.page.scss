@@ -35,4 +35,13 @@
       width: 95%;
     }
   }
+
+  &__navigation-modal {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    justify-content: center;
+  }
 }

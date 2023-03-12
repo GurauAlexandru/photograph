@@ -1,0 +1,30 @@
+@import '../../styles/styles';
+
+.modal {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    height: auto;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  &__image {
+    width: auto;
+    height: 80vh;
+    border-radius: 5px;
+    box-shadow: $shadow-image;
+
+    @media only screen and (max-width: $bp-small) {
+      height: auto;
+      width: 80%;
+    }
+  }
+}

@@ -39,3 +39,33 @@
   cursor: pointer;
   // box-shadow: $shadow-image;
 }
+
+.button--close {
+  height: 5rem;
+  width: auto;
+  color: $color-dark;
+  cursor: pointer;
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--modal {
+  height: 10rem;
+  width: 4rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid $color-dark;
+  color: $color-dark;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 3rem;
+  }
+}
