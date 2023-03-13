@@ -47,7 +47,9 @@
   cursor: pointer;
   border: 1px solid $color-dark;
   border-radius: 5px;
-  background-color: white;
+  letter-spacing: 2px;
+  // background-color: #ebf2fa;
+  background-color: $color-tertiary;
   font-size: 2.5rem;
   padding: 1rem 2rem;
 
@@ -57,15 +59,19 @@
 }
 
 .button--modal {
-  height: 10rem;
-  width: 4rem;
-  cursor: pointer;
-  background-color: white;
+  height: auto;
+  width: auto;
   border-radius: 5px;
-  border: 1px solid $color-dark;
-  color: $color-dark;
+  border: 2px solid $color-dark;
+  cursor: pointer;
+  padding: 2rem 0;
+  background-color: $color-tertiary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media only screen and (max-width: $bp-small) {
-    width: 3rem;
+    display: none;
   }
 }

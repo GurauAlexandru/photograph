@@ -2,29 +2,55 @@
 
 .modal {
   width: 100%;
-  height: auto;
-  margin-top: 5rem;
+  height: 80vh;
+  padding-top: 5rem;
+  background-color: $color-tertiary;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 
   @media only screen and (max-width: $bp-small) {
-    height: auto;
+    height: 75vh;
+    padding: 0;
     justify-content: center;
     gap: 0.4rem;
   }
 
   &__image {
     width: auto;
-    height: 80vh;
+    height: 70vh;
     border-radius: 5px;
+
     box-shadow: $shadow-image;
 
     @media only screen and (max-width: $bp-small) {
       height: auto;
-      width: 80%;
+      width: 90%;
+      border-radius: 0;
     }
+  }
+  &__small-images {
+    height: 100%;
+    cursor: pointer;
+  }
+  &__preview {
+    height: 10vh;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $color-tertiary;
+    padding: 0 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 15vh;
+    }
+  }
+
+  &__btn {
+    height: 5rem;
+    width: auto;
   }
 }

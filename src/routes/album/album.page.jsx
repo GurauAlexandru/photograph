@@ -1,14 +1,13 @@
 import './album.page.scss';
 import { useState, useEffect } from 'react';
-import Navigation from '../../components/navigation/navigation.component';
 import Modal from '../../components/modal/modal.component';
+import Navigation from '../../components/navigation/navigation.component';
 import Button from '../../components/button/button.component';
 
 const AlbumPage = ({ event }) => {
   const [picture, setPicture] = useState(null);
-  const [pictures, setPictures] = useState([]);
   const [modal, setModal] = useState(false);
-  // let curImg = picture;
+  const [click, setClick] = useState(false);
 
   function getCurrentUrl() {
     return window.location.pathname;
@@ -16,7 +15,6 @@ const AlbumPage = ({ event }) => {
 
   const url = getCurrentUrl();
   const albumName = url.split('/')[3];
-
   const obj = event.find((el) => el.slug === albumName);
 
   useEffect(() => {
@@ -26,32 +24,31 @@ const AlbumPage = ({ event }) => {
         setPicture(e.target.src);
       });
     });
-    setPictures(myPictures);
-  }, [obj, modal]);
+  }, [modal]);
+
+  useEffect(() => {
+    if (click) {
+      const smallImages = document.querySelectorAll('.modal__small-images');
+      smallImages.forEach((el) => {
+        el.addEventListener('click', (e) => {
+          setPicture(e.target.src);
+        });
+      });
+    }
+  }, [click, picture]);
 
   const openModal = () => {
     setModal(true);
-  };
-
-  const nextImg = () => {
-    // const myPic = curImg.split('/');
-    // const imgName = curImg.split('/')[7];
-
-    // const arr = myPic.filter((el) => el !== imgName);
-    // console.log(arr);
-    console.log('dont work');
-    console.log(pictures);
-    // setPicture(
-    //   `${arr[0]}//${arr[3]}/${arr[4]}/${arr[5]}/${arr[6]}/poza--${2}.webp`
-    // );
-  };
-  const prevImg = () => {
-    console.log('Prev img');
+    setClick(true);
   };
 
   const closeModal = () => {
     setPicture(() => null);
     setModal(false);
+  };
+
+  const changePicture = () => {
+    return setClick(() => true);
   };
 
   window.addEventListener('keydown', (e) => {
@@ -62,7 +59,7 @@ const AlbumPage = ({ event }) => {
   });
 
   return (
-    <section>
+    <section className='album-section'>
       {modal === false ? (
         <>
           <Navigation />
@@ -85,7 +82,20 @@ const AlbumPage = ({ event }) => {
         </>
       ) : (
         <>
-          <Modal image={picture} rightBtn={nextImg} leftBtn={prevImg} />
+          <Modal image={picture} />
+          <div className='modal__preview'>
+            {obj.poze.map((el, i) => {
+              return (
+                <img
+                  src={el}
+                  key={i}
+                  alt={obj.name}
+                  className='modal__small-images'
+                  onClick={changePicture}
+                />
+              );
+            })}
+          </div>
           <section className='album-page__navigation-modal'>
             <Button className='button--close' onClick={closeModal}>
               Close
