@@ -1,6 +1,6 @@
 @import '../../styles/styles';
 
-.album-page {
+.gallery-page {
   height: 20rem;
   width: 100%;
 
@@ -23,7 +23,7 @@
     gap: 2rem;
   }
 
-  &__img {
+  &__picture {
     height: 35rem;
     width: auto;
     border-radius: 5px;
@@ -38,11 +38,12 @@
 
   &__navigation-modal {
     width: 100%;
-    height: 10vh;
-    padding: 2rem 0 0 0;
+    height: 5vh;
+    padding: 2rem 2rem 0 0;
     background-color: $color-tertiary;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
   }
 }

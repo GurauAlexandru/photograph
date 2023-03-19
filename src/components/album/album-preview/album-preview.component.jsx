@@ -12,9 +12,6 @@ const AlbumPreview = ({ header, img1, img2, img3, link }) => {
           <AlbumPreviewPicture imagine={img2} alt={`Poza ${header}`} />
           <AlbumPreviewPicture imagine={img3} alt={`Poza ${header}`} />
         </div>
-        {/* <Link to={link} className='link--album-prev'>
-          Vezi pozele
-        </Link> */}
       </Link>
     </>
   );

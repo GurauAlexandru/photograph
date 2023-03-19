@@ -37,25 +37,23 @@
   text-decoration: none;
   border: 2px solid $color-primary;
   cursor: pointer;
-  // box-shadow: $shadow-image;
 }
 
 .button--close {
-  height: 5rem;
-  width: auto;
-  color: $color-dark;
+  height: 4rem;
+  width: 4rem;
   cursor: pointer;
-  border: 1px solid $color-dark;
   border-radius: 5px;
-  letter-spacing: 2px;
-  // background-color: #ebf2fa;
   background-color: $color-tertiary;
-  font-size: 2.5rem;
-  padding: 1rem 2rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .button--modal {

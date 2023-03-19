@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import AlbumeOverview from '../albume-overview/albume-overview.page';
 import AlbumCollections from '../album-collections/album-collections.page';
-import AlbumPage from '../album/album.page';
+import GalleryPage from '../gallery/gallery.page';
 
 import { dbAlbumeNunti } from '../../utils/dbAlbumeNunti.js';
 import { dbAlbumeBotezuri } from '../../utils/dbAlbumeBotezuri.js';
@@ -36,7 +36,10 @@ const Albume = () => {
             />
           }
         />
-        <Route path='/nunti/*' element={<AlbumPage event={dbAlbumeNunti} />} />
+        <Route
+          path='/nunti/*'
+          element={<GalleryPage event={dbAlbumeNunti} />}
+        />
         <Route
           path='/botezuri'
           element={
@@ -50,7 +53,7 @@ const Albume = () => {
         />
         <Route
           path='/botezuri/*'
-          element={<AlbumPage event={dbAlbumeBotezuri} />}
+          element={<GalleryPage event={dbAlbumeBotezuri} />}
         />
         <Route
           path='/studio'
@@ -65,7 +68,7 @@ const Albume = () => {
         />
         <Route
           path='/studio/*'
-          element={<AlbumPage event={dbAlbumeStudio} />}
+          element={<GalleryPage event={dbAlbumeStudio} />}
         />
       </Routes>
     </>
