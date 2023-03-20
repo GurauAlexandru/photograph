@@ -65,22 +65,32 @@ const GalleryPage = ({ event }) => {
     setCarousel(false);
     setNum(0);
   };
-  // 2. with key pres | this make browse slow
-  // window.addEventListener('keydown', (e) => {
-  //   e.preventDefault();
-  //   switch (e.key) {
-  //     case 'Escape':
-  //       closeCarousel();
-  //       break;
-  //     case 'ArrowRight':
-  //       increment();
-  //       break;
-  //     case 'ArrowLeft':
-  //       decrement();
-  //       break;
-  //     default:
-  //   }
-  // });
+  const useKeyDown = (callback, keys) => {
+    useEffect(() => {
+      const onKeyDown = (event) => {
+        const wasAnyKeyPressed = keys.some((key) => event.key === key);
+        if (wasAnyKeyPressed) {
+          event.preventDefault();
+          callback();
+        }
+      };
+      document.addEventListener('keydown', onKeyDown);
+
+      return () => {
+        document.removeEventListener('keydown', onKeyDown);
+      };
+    }, [callback, keys]);
+  };
+
+  useKeyDown(() => {
+    closeCarousel();
+  }, ['Escape']);
+  useKeyDown(() => {
+    increment();
+  }, ['ArrowRight']);
+  useKeyDown(() => {
+    decrement();
+  }, ['ArrowLeft']);
 
   useEffect(() => {
     // Show carousel image

@@ -13,7 +13,7 @@ const Carousel = ({ name, image, nextButton, prevButton }) => {
         <img
           src={previousBtn}
           alt='play next'
-          className='carousel--btn__image'
+          className='carousel--btn__icon'
         />
       </Button>
       <img src={image} alt={name} className='carousel__image' />
@@ -22,7 +22,7 @@ const Carousel = ({ name, image, nextButton, prevButton }) => {
         onClick={nextButton}
         className='carousel--btn carousel--btn__right'
       >
-        <img src={nextBtn} alt='play next' className='carousel--btn__image' />
+        <img src={nextBtn} alt='play next' className='carousel--btn__icon' />
       </Button>
     </section>
   );

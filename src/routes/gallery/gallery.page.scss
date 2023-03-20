@@ -44,5 +44,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 10vh;
+      align-items: flex-end;
+    }
   }
 }

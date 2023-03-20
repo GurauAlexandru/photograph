@@ -74,13 +74,11 @@
 
   @media only screen and (max-width: $bp-small) {
     position: absolute;
-    // height: 50%;
     border: 2px solid rgba($color-dark, 0);
     background-color: rgba($color-tertiary, 0.5);
-    // bottom: 5%;
   }
 
-  &__image {
+  &__icon {
     height: 4rem;
     width: 4rem;
   }
