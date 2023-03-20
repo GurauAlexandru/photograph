@@ -43,6 +43,7 @@
   height: 4rem;
   width: 4rem;
   cursor: pointer;
+  border: 2px solid $color-dark;
   border-radius: 5px;
   background-color: $color-tertiary;
 
@@ -56,20 +57,38 @@
   }
 }
 
-.button--modal {
-  height: auto;
-  width: auto;
+.carousel--btn {
+  height: 6rem;
+  width: 6rem;
   border-radius: 5px;
+  margin: 0 2rem;
   border: 2px solid $color-dark;
   cursor: pointer;
   padding: 2rem 0;
   background-color: $color-tertiary;
+  align-self: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media only screen and (max-width: $bp-small) {
-    display: none;
+    position: absolute;
+    // height: 50%;
+    border: 2px solid rgba($color-dark, 0);
+    background-color: rgba($color-tertiary, 0.5);
+    // bottom: 5%;
+  }
+
+  &__image {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &__right {
+    right: 0;
+  }
+  &__left {
+    left: 0;
   }
 }

@@ -1,47 +1,29 @@
 import './carousel.styles.scss';
+import Button from '../button/button.component';
+import nextBtn from '../../assets/icons/next.svg';
+import previousBtn from '../../assets/icons/previous.svg';
 
-// const Carousel = () => {
-//   const slidesContainer = document.getElementById('slides-container');
-//   const slide = document.querySelector('.slide');
-//   const prevButton = document.getElementById('slide-arrow-prev');
-//   const nextButton = document.getElementById('slide-arrow-next');
-
-//   // nextButton.addEventListener('click', () => {
-//   //   const slideWidth = slide.clientWidth;
-//   //   slidesContainer.scrollLeft += slideWidth;
-//   // });
-
-//   // prevButton.addEventListener('click', () => {
-//   //   const slideWidth = slide.clientWidth;
-//   //   slidesContainer.scrollLeft -= slideWidth;
-//   // });
-//   return (
-//     <section className='carousel'>
-//       <div className='slider-wrapper'>
-//         <button className='slide-arrow' id='slide-arrow-prev'>
-//           &#8249;
-//         </button>
-//         <button className='slide-arrow' id='slide-arrow-next'>
-//           &#8250;
-//         </button>
-//         <div className='slides-container' id='slides-container'>
-//           <div className='slide'>1</div>
-//           <div className='slide'>2</div>
-//           <div className='slide'>3</div>
-//           <div className='slide'>4</div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-const Carousel = ({ name, image, nextButton }) => {
+const Carousel = ({ name, image, nextButton, prevButton }) => {
   return (
     <section className='carousel'>
+      <Button
+        onClick={prevButton}
+        className='carousel--btn carousel--btn__left'
+      >
+        <img
+          src={previousBtn}
+          alt='play next'
+          className='carousel--btn__image'
+        />
+      </Button>
       <img src={image} alt={name} className='carousel__image' />
-      <button onClick={nextButton} className='button--next'>
-        Next
-      </button>
+
+      <Button
+        onClick={nextButton}
+        className='carousel--btn carousel--btn__right'
+      >
+        <img src={nextBtn} alt='play next' className='carousel--btn__image' />
+      </Button>
     </section>
   );
 };
