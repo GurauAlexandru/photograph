@@ -32,6 +32,7 @@ const Navigation = () => {
         <Link to='/despre-mine' className='navigation__link'>
           Despre
         </Link>
+
         <Link to='/contact' className='navigation__link'>
           Contact
         </Link>
