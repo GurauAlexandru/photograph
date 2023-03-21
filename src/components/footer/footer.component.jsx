@@ -42,7 +42,7 @@ const Footer = () => (
           href='https://www.instagram.com/al.webdesign/'
           target='_blank'
           rel='noreferrer'
-          className='designer'
+          className='link-design'
         >
           Alexandru Gurău
         </a>

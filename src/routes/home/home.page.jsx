@@ -1,5 +1,5 @@
 import './home.styles.scss';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
 import Header from '../../components/header/header.component';
 import Title from '../../components/title/title.component';
@@ -24,11 +24,6 @@ const HomePage = () => {
         alt='image alt'
         title='Florin Gireadă'
         description='Fotograf profesionist'
-        // children={
-        //   <Link to='/contact' className='button--cta'>
-        //     Contactează-mă
-        //   </Link>
-        // }
       />
       <Container>
         <section className='welcome'>
@@ -58,8 +53,9 @@ const HomePage = () => {
             number='01'
             title='Cel mai bun fotograf'
             paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
+            neque, perferendis voluptatum quam minus odit.'
           />
+
           <Box
             number='02'
             title='Orientat spre client'
@@ -83,36 +79,31 @@ const HomePage = () => {
       <Container>
         <Title firstTitle='Evenimente' />
         <Boxes>
-          <Box
-            number='01'
-            title='Nunți'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
-          <Box
-            number='02'
-            title='Botezuri'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
-          <Box
-            number='03'
-            title='Familie'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
-          <Box
-            number='04'
-            title='Studio'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
-          <Box
-            number='05'
-            title='Produse'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
+          <Link to='/albume/nunti' className='link-design'>
+            <Box
+              number='01'
+              title='Nunți'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+            neque, perferendis voluptatum quam minus odit.'
+            />
+          </Link>
+          <Link to='/albume/botezuri' className='link-design'>
+            <Box
+              number='02'
+              title='Botezuri'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+            neque, perferendis voluptatum quam minus odit.'
+            />
+          </Link>
+
+          <Link to='/albume/studio' className='link-design'>
+            <Box
+              number='03'
+              title='Studio'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+            neque, perferendis voluptatum quam minus odit.'
+            />
+          </Link>
         </Boxes>
       </Container>
       <Container>
