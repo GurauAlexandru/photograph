@@ -3,7 +3,7 @@ import './album-welcome.styles.scss';
 const AlbumWelcome = ({ img, picture }) => (
   <section className='album-welcome'>
     <div className='album-welcome__container'>
-      <h1 className='h h--xLarge'>Albume foto</h1>
+      <h1 className='h h--xLarge'>albume foto</h1>
       <p className='paragraph'>
         Mai jos vei găsi linkurile catre albumele de nunți, botezuri, poze de
         produs, de familie, etc.

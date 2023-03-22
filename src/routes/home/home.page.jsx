@@ -49,25 +49,31 @@ const HomePage = () => {
       <Container>
         <Title firstTitle='De ce clienții' secondTitle='mă aleg pe mine?' />
         <Boxes>
-          <Box
-            number='01'
-            title='Cel mai bun fotograf'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+          <Link to='/despre-mine' className='link-design'>
+            <Box
+              number='01'
+              title='Cel mai bun fotograf'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
             neque, perferendis voluptatum quam minus odit.'
-          />
+            />
+          </Link>
 
-          <Box
-            number='02'
-            title='Orientat spre client'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
-          <Box
-            number='03'
-            title='Rezultate excelente'
-            paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-              neque, perferendis voluptatum quam minus odit.'
-          />
+          <Link to='/despre-mine' className='link-design'>
+            <Box
+              number='02'
+              title='Orientat spre client'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+            neque, perferendis voluptatum quam minus odit.'
+            />
+          </Link>
+          <Link to='/despre-mine' className='link-design'>
+            <Box
+              number='03'
+              title='Rezultate excelente'
+              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
+            neque, perferendis voluptatum quam minus odit.'
+            />
+          </Link>
         </Boxes>
       </Container>
       <Banner />

@@ -8,7 +8,11 @@
 
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
-    height: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 2rem;
   }
 
   &__imageBox {
@@ -24,6 +28,9 @@
       height: 50%;
       width: 100%;
     }
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2rem;
+    }
   }
 
   &__image {
@@ -31,8 +38,11 @@
     width: 100%;
 
     @media only screen and (max-width: $bp-medium) {
-      width: 40%;
+      display: none;
+      // width: 40%;
     }
+    // @media only screen and (max-width: $bp-small) {
+    // }
   }
 
   &__contactBox {
