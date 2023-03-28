@@ -7,6 +7,9 @@ export const dbAlbumeStudio = [
       `${__dirname}../assets/albume/studio/album1/poza--1.webp`,
       `${__dirname}../assets/albume/studio/album1/poza--2.webp`,
       `${__dirname}../assets/albume/studio/album1/poza--3.webp`,
+      `${__dirname}../assets/albume/studio/album1/poza--4.webp`,
+      `${__dirname}../assets/albume/studio/album1/poza--5.jpg`,
+      `${__dirname}../assets/albume/studio/album1/poza--6.jpg`,
     ],
   },
   {

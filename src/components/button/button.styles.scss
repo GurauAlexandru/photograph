@@ -46,6 +46,7 @@
   border: 2px solid $color-dark;
   border-radius: 5px;
   background-color: $color-tertiary;
+  transition: all 0.2s ease-in;
 
   display: flex;
   justify-content: center;
@@ -55,6 +56,9 @@
     height: 5rem;
     width: 5rem;
   }
+}
+.button--close:hover {
+  background-color: red;
 }
 
 .carousel--btn {
