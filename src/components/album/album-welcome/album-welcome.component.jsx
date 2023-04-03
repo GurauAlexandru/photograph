@@ -5,8 +5,8 @@ const AlbumWelcome = ({ img, picture }) => (
     <div className='album-welcome__container'>
       <h1 className='h h--xLarge'>albume foto</h1>
       <p className='paragraph'>
-        Mai jos vei găsi linkurile catre albumele de nunți, botezuri, poze de
-        produs, de familie, etc.
+        Mai jos sunt afișate albume cu fotografii de la nunți, botezuri cât și
+        cele făcute în studio.
       </p>
     </div>
     <img

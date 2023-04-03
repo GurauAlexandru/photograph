@@ -40,11 +40,14 @@
 }
 
 .button--close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   height: 4rem;
   width: 4rem;
   cursor: pointer;
-  border: 2px solid $color-dark;
-  border-radius: 5px;
+
+  border: none;
   background-color: $color-tertiary;
   transition: all 0.2s ease-in;
 
@@ -57,19 +60,15 @@
     width: 5rem;
   }
 }
-.button--close:hover {
-  background-color: red;
-}
 
 .carousel--btn {
   height: 6rem;
   width: 6rem;
-  border-radius: 5px;
-  margin: 0 2rem;
-  border: 2px solid $color-dark;
+  // margin: 0 2rem;
   cursor: pointer;
+  border: none;
   padding: 2rem 0;
-  background-color: $color-tertiary;
+  background-color: black;
   align-self: center;
 
   display: flex;
@@ -83,14 +82,18 @@
   }
 
   &__icon {
-    height: 4rem;
-    width: 4rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   &__right {
     right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   &__left {
     left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }

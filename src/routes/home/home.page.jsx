@@ -1,7 +1,7 @@
 import './home.styles.scss';
 import { Link } from 'react-router-dom';
 import Navigation from '../../components/navigation/navigation.component';
-import Header from '../../components/header/header.component';
+import MainHeader from '../../components/mainHeader/mainHeader.component';
 import Title from '../../components/title/title.component';
 import Container from '../../components/container/container.component';
 import Boxes from '../../components/boxes/boxes.component';
@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <>
       <Navigation />
-      <Header
+      <MainHeader
         img={img}
         alt='image alt'
         title='Florin Gireadă'
@@ -53,25 +53,22 @@ const HomePage = () => {
             <Box
               number='01'
               title='Cel mai bun fotograf'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              paragraph='In peste 10 ani de activitate am obținut diverse distincții, care mă poziționează in topul celor mai buni fotografi din România.'
             />
           </Link>
 
           <Link to='/despre-mine' className='link-design'>
             <Box
               number='02'
-              title='Orientat spre client'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              title='Seriozitate și profesionalism'
+              paragraph='Calitatea, seriozitatea, profesionalismul și experiența de peste 10 ani în acest domeniu sunt atuurile care mă poziționează în această industrie.'
             />
           </Link>
           <Link to='/despre-mine' className='link-design'>
             <Box
               number='03'
-              title='Rezultate excelente'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              title='Cele mai bune rezultate'
+              paragraph='Este obiectivul cu care mi-am început activitatea fotografică, obiectiv care mă dirijează în cariera mea de fotograf.'
             />
           </Link>
         </Boxes>
@@ -89,8 +86,7 @@ const HomePage = () => {
             <Box
               number='01'
               title='Nunți'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              paragraph='Eleganța, romantismul și aspectele distractive ale zilei nunții tale sunt surprinse de la început până la sfârșit.'
             />
           </Link>
           <Link to='/albume/botezuri' className='link-design'>
@@ -106,8 +102,7 @@ const HomePage = () => {
             <Box
               number='03'
               title='Studio'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              paragraph='Dacă o imagine merită o mie de cuvinte, o imagine uimitoare a unui produs merită o mie de vizite pe site.'
             />
           </Link>
         </Boxes>

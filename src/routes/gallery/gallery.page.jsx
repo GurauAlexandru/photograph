@@ -2,7 +2,6 @@ import './gallery.page.scss';
 import { useState, useEffect, useContext } from 'react';
 import Carousel from '../../components/carousel/carousel.component';
 import Navigation from '../../components/navigation/navigation.component';
-import Button from '../../components/button/button.component';
 import closeIcon from '../../assets/icons/close-square.svg';
 import { PicturesContext } from '../../context/pictures.context';
 
@@ -126,23 +125,12 @@ const GalleryPage = ({ event }) => {
         </>
       ) : (
         <>
-          <section className='gallery-page__navigation-modal'>
-            <Button
-              id='button-close'
-              className='button--close'
-              onClick={closeCarousel}
-            >
-              <img
-                src={closeIcon}
-                alt='close modal icon'
-                className='button--close__icon'
-              />
-            </Button>
-          </section>
           <Carousel
             image={picture}
             nextButton={() => increment()}
             prevButton={() => decrement()}
+            closeCarousel={closeCarousel}
+            closeIcon={closeIcon}
           />
         </>
       )}

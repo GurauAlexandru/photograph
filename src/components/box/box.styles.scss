@@ -2,7 +2,7 @@
 
 .box {
   width: 32rem;
-  height: 25rem;
+  height: auto;
 
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 
   @media only screen and (max-width: $bp-large) {
     width: 28rem;
-    height: 25rem;
+    height: auto;
   }
   @media only screen and (max-width: $bp-medium) {
     width: 100%;

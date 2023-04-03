@@ -3,9 +3,27 @@ import Button from '../button/button.component';
 import nextBtn from '../../assets/icons/next.svg';
 import previousBtn from '../../assets/icons/previous.svg';
 
-const Carousel = ({ name, image, nextButton, prevButton }) => {
+const Carousel = ({
+  name,
+  image,
+  nextButton,
+  prevButton,
+  closeCarousel,
+  closeIcon,
+}) => {
   return (
     <section className='carousel'>
+      <Button
+        id='button-close'
+        className='button--close'
+        onClick={closeCarousel}
+      >
+        <img
+          src={closeIcon}
+          alt='close modal icon'
+          className='button--close__icon'
+        />
+      </Button>
       <Button
         onClick={prevButton}
         className='carousel--btn carousel--btn__left'
