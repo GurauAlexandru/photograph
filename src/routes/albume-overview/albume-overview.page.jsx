@@ -21,11 +21,14 @@ const AlbumeOverview = () => {
         <section className='album-box'>
           <div className='album-box__bar'></div>
           <p className='paragraph'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            eveniet exercitationem unde eum nihil ipsum est officia doloribus
-            reiciendis, deserunt voluptatibus praesentium earum. Autem
-            temporibus pariatur nisi laborum officiis debitis vitae, unde modi
-            velit ea.
+            Cauți un fotograf profesionist pentru a realiza o ședință foto? Ai
+            nevoie de un fotograf de nuntă sau de botez? Sau poate iți dorești o
+            ședință foto de logodnă sau o sedință foto Trash the Dress? Nu ezita
+            să mă{' '}
+            <Link to='/contact' className='no-style'>
+              {' '}
+              contactezi!
+            </Link>
           </p>
           <div className='album-box__bar'></div>
         </section>
@@ -47,9 +50,7 @@ const AlbumeOverview = () => {
           alt='albume botez'
           smallTitle='Primul eveniment din viața bebelușului.'
           title='Botezuri'
-          paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti
-          blanditiis accusantium magni ipsa in! Molestias natus et officiis eaque!
-          Quibusdam rerum tenetur laudantium consequuntur.'
+          paragraph='Nașterea unui copil este un moment ce aduce nespus de multă bucurie în viața oricărui cuplu, acest eveniment fiind rememorat cu drag de către întreaga familie tot restul vieții.'
           link={
             <Link to='/albume/botezuri' className='link--album-prev'>
               Vezi albumele
@@ -59,7 +60,7 @@ const AlbumeOverview = () => {
         <AlbumCollectionPreview
           img={studioPrev}
           alt='albume studio'
-          smallTitle='Lorem ipsum dolor elit tenetur.'
+          smallTitle='Orice fotografie spune o poveste.'
           title='Studio'
           paragraph='Dacă o imagine merită o mie de cuvinte, o imagine uimitoare a unui produs merită o mie de vizite pe site.'
           link={

@@ -93,8 +93,7 @@ const HomePage = () => {
             <Box
               number='02'
               title='Botezuri'
-              paragraph='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at
-            neque, perferendis voluptatum quam minus odit.'
+              paragraph='Nașterea unui copil este un moment ce aduce nespus de multă bucurie în viața oricărui cuplu, acest eveniment fiind rememorat cu drag de către întreaga familie tot restul vieții.'
             />
           </Link>
 
